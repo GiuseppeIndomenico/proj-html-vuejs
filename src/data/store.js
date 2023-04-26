@@ -4,27 +4,33 @@ export const store = reactive({
     links: [
         {
             title: 'home',
-            href: '#'
+            url: '#',
+            active: true
         },
         {
             title: 'about',
-            href: '#'
+            url: '#',
+            active: false
         },
         {
             title: 'project',
-            href: '#'
+            url: '#',
+            active: false
         },
         {
             title: 'services',
-            href: '#'
+            url: '#',
+            active: false
         },
         {
             title: 'blog',
-            href: '#'
+            url: '#',
+            active: false
         },
         {
             title: 'contact',
-            href: '#'
+            url: '#',
+            active: false
         },
     ]
 
