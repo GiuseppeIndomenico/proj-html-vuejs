@@ -1,9 +1,15 @@
 @use './partials/variables' as *;
 
-* {
-    font-family: 'Roboto', sans-serif;
+header {
+    font-family: 'Bai Jamjuree', sans-serif;
 
+    .nav {
+        font-family: 'Roboto', sans-serif;
+
+    }
 }
+
+
 
 .gi-button {
     padding: 20px 50px;

@@ -1,10 +1,12 @@
 <template>
   <HeaderComponent />
+  <MainComponent />
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
 import { store } from './data/store'
+import MainComponent from './components/MainComponent.vue';
 export default {
   data() {
     return {
@@ -12,7 +14,8 @@ export default {
     }
   },
   components: {
-    HeaderComponent
+    HeaderComponent,
+    MainComponent
   },
 
 }

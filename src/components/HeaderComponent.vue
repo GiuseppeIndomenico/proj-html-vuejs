@@ -17,8 +17,11 @@
                 <div class="gi-tratto"></div>
                 <h5>ALWATS THE BEST WAY YOU NEED IT</h5>
             </div>
-            <h1>THE BEST BUSINESS CONSULTING</h1>
+            <h1 class="mb-4">THE BEST BUSINESS CONSULTING</h1>
             <button class="gi-button">READ MORE</button>
+            <span class=" rounded-circle ms-4">
+                <i class="fa-solid fa-play"></i>
+            </span>
 
         </div>
     </header>
@@ -89,6 +92,15 @@ header {
         background-color: $sec;
         width: 50px;
         margin-bottom: 5px;
+    }
+
+    span {
+        border: 3px solid $light;
+        padding: 1rem;
+
+        i {
+            color: $sec;
+        }
     }
 
     .title {
