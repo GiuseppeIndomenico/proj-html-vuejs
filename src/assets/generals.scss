@@ -1,1 +1,6 @@
 @use './partials/variables' as *;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color: $primary;
+}

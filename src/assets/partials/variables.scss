@@ -1,0 +1,13 @@
+/* Color styles */
+$primary: #1F1E38;
+$sec: #39FFBF;
+$sec-1: #35FFBF;
+$light: #FFFFFF;
+$dark: #333333;
+$hover-color: #F81D39;
+
+@mixin centratura {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
