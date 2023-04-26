@@ -6,8 +6,11 @@ $light: #FFFFFF;
 $dark: #333333;
 $hover-color: #F81D39;
 
-@mixin centratura {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@mixin primary-btn {
+    background-color: $sec;
+
+    &:hover {
+        background-color: $hover-color;
+        color: $light;
+    }
 }

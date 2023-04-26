@@ -2,5 +2,14 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    background-color: $primary;
+
 }
+
+.gi-button {
+    padding: 20px 50px;
+    border: 0;
+    transition: all 0.25s;
+    @include primary-btn
+}
+
+;
