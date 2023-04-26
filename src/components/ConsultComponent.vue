@@ -42,7 +42,6 @@ i {
 
     p {
         font-family: 'montserrat', Sans-serif;
-        ;
     }
 }
 </style>
