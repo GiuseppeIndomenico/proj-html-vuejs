@@ -19,7 +19,7 @@
                 <div class="col-5 d-flex align-items-center dark p-5">
                     <div class="gi-card">
                         <div class="d-flex align-items-center">
-                            <div class="gi-tratto short me-2"></div>
+                            <div class="gi-tratto short me-2  mb-3"></div>
                             <h5>ABOUT US</h5>
                         </div>
                         <h2 class="fw-bold">WE MAKE YOUR STRATEGY WORK</h2>
@@ -40,12 +40,12 @@
 
             </div>
         </section>
-        <section id="project" class="dark vh-100">
+        <section id="project" class="dark vh-100 start-chapter">
 
             <div class="row mt-5 px-3">
                 <div class="col-8">
                     <div class="d-flex align-items-center">
-                        <div class="gi-tratto short me-2"></div>
+                        <div class="gi-tratto short me-2 mb-3"></div>
                         <h5>PROJECT</h5>
                     </div>
                     <h2 class="fw-bold">OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h2>
@@ -64,13 +64,37 @@
                     :categorize="project.categorize" />
             </div>
         </section>
+
+        <section class="dark start-chapter ps-4" id="testimonial">
+            <div class="row">
+                <div class="col-10">
+                    <h5 class="text-center">TESTIMONIAL</h5>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-end ">
+                    <div class="gi-tratto short ms-2 me-3"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <h2 class="fw-bold text-end pe-3">WHAT'S THE CUSTOMER SAY ABOUT OUR WORK</h2>
+                </div>
+            </div>
+            <div class="d-flex">
+                <TestimonialComponent v-for="test in store.testimonials" :name="test.name" :image="test.image"
+                    :cit="test.cit" :work="test.workCompany" />
+            </div>
+
+
+        </section>
     </main>
 </template>
 
 <script>
 import { store } from '../data/store';
 import ConsultComponent from './ConsultComponent.vue';
-import ProjectComponent from './ProjectComponent.vue'
+import ProjectComponent from './ProjectComponent.vue';
+import TestimonialComponent from './TestimonialComponent.vue';
 export default {
     data() {
         return {
@@ -79,7 +103,8 @@ export default {
     },
     components: {
         ConsultComponent,
-        ProjectComponent
+        ProjectComponent,
+        TestimonialComponent,
     }
 }
 </script>
@@ -92,9 +117,13 @@ h3 {
 
 }
 
+.start-chapter {
+    padding-top: 150px;
+}
+
 .title-main {
     margin-left: 180px;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: bold;
 }
 
