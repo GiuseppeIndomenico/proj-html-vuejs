@@ -1,6 +1,6 @@
 <template>
     <main class="mt-4">
-        <div class="d-flex">
+        <div class="d-flex mt-5">
             <h3 class="title-main">OUR CONSULTANTS CAN HELP YOU</h3>
             <div class="gi-tratto long"></div>
         </div>
@@ -71,7 +71,9 @@ h3 {
 }
 
 .title-main {
-    margin-left: 280px;
+    margin-left: 180px;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .gi-tratto {
@@ -81,7 +83,7 @@ h3 {
 }
 
 .long {
-    width: 59%;
+    width: 50%;
     margin-top: 20px;
     margin-left: 10px;
 }
