@@ -87,15 +87,15 @@ export const store = reactive({
 
         {
             cit: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed by when I hear the buzz of the little .',
-            name: 'Vera Duncan',
+            name: 'Dr. Gregorio Casa',
             image: '/images/12679.jpg',
-            workCompany: 'Amazon Inc.'
+            workCompany: 'Princeton-Plainsboro University'
         },
         {
             cit: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed by when I hear the buzz of the little .',
-            name: 'Vera Duncan',
+            name: 'Enrico Vasaio',
             image: '/images/oliver-ragfelt-488196-unsplash.jpg',
-            workCompany: 'Amazon Inc.'
+            workCompany: 'Babbani corp.'
         },
 
     ]
