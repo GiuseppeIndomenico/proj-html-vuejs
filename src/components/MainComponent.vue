@@ -9,10 +9,12 @@
                 <ConsultComponent v-for="cons in store.consultants" :title="cons.title" :p="cons.p" :icon="cons.icon" />
             </div>
         </div>
-        <section class="dark">
+        <section id="aboutUs" class="dark">
             <div class="row">
                 <div class="col-7">
-                    <img src="\images\business-people-working-together-on-project-and-5FHSKBL.jpg" alt="">
+                    <div class="cont-img">
+                        <img src="\images\business-people-working-together-on-project-and-5FHSKBL.jpg" alt="">
+                    </div>
                 </div>
 
                 <div class="col-5 d-flex align-items-center dark p-5">
@@ -34,7 +36,7 @@
                 <button class="red-btn fw-semibold">GET STARTED</button>
 
                 <span class="title-big fw-bold limit-400">WE HELP TO DELIVER THE BUSINESS CASE</span>
-                <p class="limit-400">When, while lovely valley teems with vapour around meand meridian sun strikes the
+                <p class="p-gi">When, while lovely valley teems with vapour around meand meridian sun strikes the
                     upper impenetrable
                     foliage of my trees, and but a thousand unknown</p>
 
@@ -121,7 +123,16 @@ h5 {
     font-family: $bay;
 }
 
+.cont-img {
+    height: 600px;
 
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
 
 .green {
     background-color: $sec;
@@ -130,12 +141,17 @@ h5 {
 }
 
 .title-big {
-    font-size: 35px;
+    font-size: 38px;
     font-family: $bay;
 }
 
 .limit-400 {
     max-width: 400px;
+}
+
+.p-gi {
+    font-size: 24px;
+    max-width: 700px;
 }
 
 .red-btn {

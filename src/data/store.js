@@ -9,27 +9,27 @@ export const store = reactive({
         },
         {
             title: 'about',
-            url: '#',
+            url: '#aboutUs',
             active: false
         },
         {
             title: 'project',
-            url: '#',
+            url: '#project',
             active: false
         },
         {
             title: 'services',
-            url: '#',
+            url: '#services',
             active: false
         },
         {
             title: 'blog',
-            url: '#',
+            url: '#blog',
             active: false
         },
         {
             title: 'contact',
-            url: '#',
+            url: '#contact',
             active: false
         },
     ],

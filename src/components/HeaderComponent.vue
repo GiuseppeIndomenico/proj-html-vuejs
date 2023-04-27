@@ -19,7 +19,7 @@
             </div>
             <h1 class="mb-4">THE BEST BUSINESS CONSULTING</h1>
             <button class="gi-button">READ MORE</button>
-            <span class=" rounded-circle ms-4">
+            <span class=" rounded-circle ms-4 click">
                 <i class="fa-solid fa-play"></i>
             </span>
 
@@ -95,12 +95,18 @@ header {
     }
 
     span {
-        border: 3px solid $light;
-        padding: 1rem;
+        border: 2px solid $light;
+        width: 75px;
+        height: 75px;
+        padding: 20px;
 
         i {
             color: $sec;
         }
+    }
+
+    .click {
+        cursor: pointer;
     }
 
     .title {
