@@ -9,14 +9,13 @@
                 <ConsultComponent v-for="cons in store.consultants" :title="cons.title" :p="cons.p" :icon="cons.icon" />
             </div>
         </div>
-        <section id="aboutUs" class="dark">
+        <section id="aboutUs" class="dark vh-100">
             <div class="row">
                 <div class="col-7">
                     <div class="cont-img">
                         <img src="\images\business-people-working-together-on-project-and-5FHSKBL.jpg" alt="">
                     </div>
                 </div>
-
                 <div class="col-5 d-flex align-items-center dark p-5">
                     <div class="gi-card">
                         <div class="d-flex align-items-center">
@@ -30,7 +29,6 @@
                             .and flies, then I feel the presence of the Almighty . </p>
                     </div>
                 </div>
-
             </div>
             <div class="col-11 position-relative green d-flex align-items-center justify-content-around px-5">
                 <button class="red-btn fw-semibold">GET STARTED</button>
@@ -41,15 +39,38 @@
                     foliage of my trees, and but a thousand unknown</p>
 
             </div>
-
         </section>
+        <section id="project" class="dark vh-100">
 
+            <div class="row mt-5 px-3">
+                <div class="col-8">
+                    <div class="d-flex align-items-center">
+                        <div class="gi-tratto short me-2"></div>
+                        <h5>PROJECT</h5>
+                    </div>
+                    <h2 class="fw-bold">OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h2>
+                </div>
+                <div class="col-3 d-flex align-items-center ms-5">
+                    <div class="square m-1 d-flex align-items-center justify-content-center"><i
+                            class="fa-solid fa-arrow-left"></i></div>
+                    <div class="square m-1 d-flex align-items-center justify-content-center"><i
+                            class="fa-solid fa-arrow-right"></i></div>
+                </div>
+
+
+            </div>
+            <div class="row mt-5 px-3">
+                <ProjectComponent v-for="project in store.projects  " :url="project.image" :product="project.product"
+                    :categorize="project.categorize" />
+            </div>
+        </section>
     </main>
 </template>
 
 <script>
 import { store } from '../data/store';
 import ConsultComponent from './ConsultComponent.vue';
+import ProjectComponent from './ProjectComponent.vue'
 export default {
     data() {
         return {
@@ -57,7 +78,8 @@ export default {
         }
     },
     components: {
-        ConsultComponent
+        ConsultComponent,
+        ProjectComponent
     }
 }
 </script>
@@ -99,14 +121,14 @@ h3 {
     overflow-x: hidden;
 }
 
+h2 {
+    font-family: $bay;
+    font-size: 64px;
+    margin-bottom: 2rem;
+}
+
 .gi-card {
     max-width: 550px;
-
-    h2 {
-        font-family: $bay;
-        font-size: 64px;
-        margin-bottom: 2rem;
-    }
 
     p {
         font-family: $mont;
@@ -167,10 +189,29 @@ h5 {
     right: 0;
     font-size: 18px;
     font-family: $mont;
+    border: 1px inset transparent;
 
     &:hover {
         background-color: $primary;
+        border: 1px inset $sec;
 
     }
+}
+
+.square {
+    padding: .5rem;
+    width: 50px;
+    height: 50px;
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
+    transition: all .25s;
+
+    i {
+        font-size: 20px;
+    }
+
+    &:hover {
+        background-color: $sec;
+    }
+
 }
 </style>
