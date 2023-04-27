@@ -57,19 +57,50 @@
                     :cit="test.cit" :work="test.workCompany" />
             </div>
         </section>
-        <section id="blog" class="dark vh-100 start-chapter  px-3">
+        <section id="blog" class="dark start-chapter py-4 px-3">
             <div class="d-flex align-items-center">
-                <div class="gi-tratto short me-2 mb-3"></div>
+                <div class="gi-tratto short me-2 mb-5"></div>
                 <h5>BLOG</h5>
             </div>
-            <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between mb-5">
                 <h2 class="fw-bold">THE RECENT NEWS YOU MUST READ IT</h2>
 
                 <button class="gi-button">VIEW ALL</button>
             </div>
 
+            <div class="row">
+                <div class="col-6">
+                    <div class="gi-cont-img position-relative">
+                        <img class="img-fluid"
+                            src="\images\startup-business-people-and-strategy-board-PAJ3P9K-1390x1042.jpg" alt="">
+                        <div class="text-dark gi-text-card position-absolute">
+                            <span class="text-danger">july 4, 2019 by paul</span>
+                            <h3>Canadian Consulting Firm acquired by UK Giant</h3>
+                            <p>
+                                When, while lovely valley teems with vapour around meand eridian sun strikes the upper
+                                impenetrable foliage of my trees, and but a ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="gi-cont-img position-relative">
+                        <img class="img-fluid"
+                            src="\images\business-people-working-together-on-project-and-5FHSKBL-1390.jpg" alt="">
+                        <div class="text-dark gi-text-card position-absolute">
+                            <span class="text-danger">july 4, 2019 by paul</span>
+                            <h3>Canadian Consulting Firm acquired by UK Giant</h3>
+                            <p>
+                                When, while lovely valley teems with vapour around meand eridian sun strikes the upper
+                                impenetrable foliage of my trees, and but a ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
+
     </main>
 </template>
 
@@ -228,5 +259,37 @@ h5 {
         background-color: $sec;
     }
 
+}
+
+.gi-text-card {
+    width: 80%;
+    font-family: $mont;
+    right: 0;
+    bottom: -24px;
+    padding: 3rem 5rem;
+    transition: all .25s;
+    background-color: $light;
+
+    &:hover {
+        background-color: $sec;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin-bottom: 2rem;
+        width: 70%;
+        font-weight: 600;
+    }
+
+    p {
+        opacity: 0.9;
+        line-height: 2rem;
+        font-size: 20px;
+    }
 }
 </style>

@@ -38,7 +38,8 @@ export default {
 @use'../assets/partials/variables.scss' as *;
 
 .cover {
-    background-color: rgb(213 8 34 / 80%);
+    background-color: rgba($color: $hover-color , $alpha: 0.8);
+    ;
     z-index: 2;
     top: 0;
     bottom: 0;
@@ -59,11 +60,21 @@ export default {
         right: 0;
     }
 
+
 }
+
 
 .cont-img {
     overflow: hidden;
 
+    img {
+
+        transition: all 0.5s;
+    }
+
+    &:hover img {
+        filter: grayscale(100%);
+    }
 }
 
 .square {

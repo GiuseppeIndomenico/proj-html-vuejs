@@ -12,9 +12,12 @@ header {
 
 
 .gi-button {
-    padding: 20px 50px;
+    padding: 25px 60px;
     border: 0;
     transition: all 0.25s;
+    font-size: 22px;
+    font-family: $mont;
+    font-weight: 500;
     @include primary-btn
 }
 
