@@ -53,7 +53,6 @@ export default {
     }
 
 
-
     .text-cover {
         left: 0;
         bottom: 0;
@@ -62,6 +61,10 @@ export default {
 
 }
 
+.cont-img {
+    overflow: hidden;
+
+}
 
 .square {
     padding: .5rem;

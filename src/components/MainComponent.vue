@@ -141,7 +141,7 @@ h2 {
 
 h5 {
     font-weight: 400;
-    line-height: 25px;
+    letter-spacing: 8px;
     margin-left: 1rem;
     margin-bottom: 1rem;
     font-family: $bay;
@@ -174,8 +174,9 @@ h5 {
 }
 
 .p-gi {
-    font-size: 24px;
+    font-size: 20px;
     max-width: 700px;
+    letter-spacing: 2px;
 }
 
 .red-btn {
