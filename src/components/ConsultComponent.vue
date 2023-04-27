@@ -1,5 +1,5 @@
 <template>
-    <div class="col-6 mt-5">
+    <div class="col-6 ">
         <div class="row">
             <div class="col-2">
                 <i :class="icon"></i>
@@ -31,17 +31,24 @@ i {
     padding: 1rem;
     border-radius: 50%;
     font-size: 2rem;
+
 }
 
 .row {
     max-width: 520px;
 
     h4 {
-        font-family: 'Bai Jamjuree';
+        font-family: $bay;
+        font-size: 32px;
     }
 
     p {
-        font-family: 'montserrat', Sans-serif;
+        font-family: $mont;
+        font-size: 20px;
+    }
+
+    .col-6 {
+        margin-top: 150px;
     }
 }
 </style>

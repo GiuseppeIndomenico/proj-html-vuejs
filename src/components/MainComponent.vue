@@ -4,7 +4,7 @@
             <h3 class="title-main">OUR CONSULTANTS CAN HELP YOU</h3>
             <div class="gi-tratto long"></div>
         </div>
-        <div class="container">
+        <div class="container vh-100">
             <div class="row">
                 <ConsultComponent v-for="cons in store.consultants" :title="cons.title" :p="cons.p" :icon="cons.icon" />
             </div>
