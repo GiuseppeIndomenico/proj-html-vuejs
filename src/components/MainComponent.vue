@@ -56,6 +56,17 @@
                 <TestimonialComponent v-for="test in store.testimonials" :name="test.name" :image="test.image"
                     :cit="test.cit" :work="test.workCompany" />
             </div>
+        </section>
+        <section id="blog" class="dark vh-100 start-chapter  px-3">
+            <div class="d-flex align-items-center">
+                <div class="gi-tratto short me-2 mb-3"></div>
+                <h5>BLOG</h5>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <h2 class="fw-bold">THE RECENT NEWS YOU MUST READ IT</h2>
+
+                <button class="gi-button">VIEW ALL</button>
+            </div>
 
 
         </section>
@@ -126,7 +137,7 @@ h3 {
 
 h2 {
     font-family: $bay;
-    font-size: 64px;
+    font-size: 60px;
     margin-bottom: 2rem;
 }
 
