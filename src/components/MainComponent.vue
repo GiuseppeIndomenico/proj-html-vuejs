@@ -40,7 +40,7 @@
         <section class="dark start-chapter ps-4" id="testimonial">
             <div class="row">
                 <div class="col-10">
-                    <h5 class="text-center">TESTIMONIAL</h5>
+                    <h5 class="text-center m-0">TESTIMONIAL</h5>
                 </div>
                 <div class="col-2 d-flex align-items-center justify-content-end ">
                     <div class="gi-tratto short ms-2 me-3"></div>
@@ -57,9 +57,9 @@
                     :cit="test.cit" :work="test.workCompany" />
             </div>
         </section>
-        <section id="blog" class="dark start-chapter py-4 px-3">
+        <section id="blog" class="dark start-chapter p-5">
             <div class="d-flex align-items-center">
-                <div class="gi-tratto short me-2 mb-5"></div>
+                <div class="gi-tratto short me-2 mb-3"></div>
                 <h5>BLOG</h5>
             </div>
             <div class="d-flex align-items-center justify-content-between mb-5">
@@ -100,6 +100,7 @@
             </div>
 
         </section>
+
 
     </main>
 </template>
@@ -259,6 +260,10 @@ h5 {
         background-color: $sec;
     }
 
+}
+
+.testimonial {
+    height: 100vh;
 }
 
 .gi-text-card {
