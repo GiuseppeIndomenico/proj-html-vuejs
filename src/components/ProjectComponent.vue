@@ -69,11 +69,12 @@ export default {
 
     img {
 
-        transition: all 0.5s;
+        transition: all 1s;
     }
 
     &:hover img {
         filter: grayscale(100%);
+        scale: 1.2;
     }
 }
 

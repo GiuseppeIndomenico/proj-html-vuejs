@@ -121,6 +121,10 @@ footer {
         i {
             font-size: 24px;
             padding: 1rem;
+
+            &:hover {
+                color: $hover-color
+            }
         }
     }
 

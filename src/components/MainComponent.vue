@@ -23,10 +23,12 @@
                     <h2 class="fw-bold">OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h2>
                 </div>
                 <div class="col-3 d-flex align-items-center ms-5">
-                    <div class="square m-1 d-flex align-items-center justify-content-center"><i
-                            class="fa-solid fa-arrow-left"></i></div>
-                    <div class="square m-1 d-flex align-items-center justify-content-center"><i
-                            class="fa-solid fa-arrow-right"></i></div>
+                    <div class="square m-1 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="square m-1 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                 </div>
 
 
