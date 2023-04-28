@@ -8,6 +8,30 @@
                 <button class="btn-footer">GET STARTED</button>
             </div>
 
+            <div class="d-flex align-item-center justify-content-between px-4 nav-footer">
+                <div class=" cont-logo">
+                    <img src="\images\logotype-2-150x25.png" alt="">
+                </div>
+                <ul class="d-flex list-unstyled">
+
+                    <LinkFooterComponent v-for="li in store.links" :title="li.title" :url="li.url" />
+                </ul>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="px-4">
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-4 terms">
+                    <p>Terms of use <br>
+                        Privacy Environmental Policy</p>
+
+                    <p>Copyright © 2023 Phlox Consulting. All Rights Reserved.</p>
+                </div>
+            </div>
 
         </div>
     </footer>
@@ -15,12 +39,16 @@
 
 <script>
 import { store } from '../data/store';
+import LinkFooterComponent from './LinkFooterComponent.vue';
 
 export default {
     data() {
         return {
             store
         }
+    },
+    components: {
+        LinkFooterComponent
     },
 }
 </script>
@@ -80,6 +108,27 @@ footer {
         }
 
 
+    }
+
+    .nav-footer {
+        margin: 6rem 0rem;
+
+        .cont-logo {
+            width: 200px;
+            height: 32px;
+        }
+
+        i {
+            font-size: 24px;
+            padding: 1rem;
+        }
+    }
+
+    .terms {
+        color: $light;
+        opacity: 0.8;
+        font-family: $mont;
+        line-height: 2rem;
     }
 }
 </style>
